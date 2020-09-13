@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Human Height Prediction </title>
+</head>
+<center>
+<body>
+	 
+    <h2 style="color:red"><u>Human Height prediction</u></h2>
+    <h3 style="color:blue"><u>Predict the height of the person when hand and foot lengths are given</u></h3><br>
+    <h4 style="color:green"><u>Enter hand and foot lengths</u></h4>
+            
+    <form action='/predict' method="post">
+      <table>
+		<tr><td> Enter Length of Right Hand
+			<td>  <input  name="HLR"  placeholder="Hand Length Right" >
+        </tr>
+        <tr><td> Enter Length of Left Hand
+            <td>  <input  name="HLL" placeholder="Hand Length Left" > 
+		</tr>
+		<tr><td> Enter Breadth of Right Hand
+			<td>  <input  name="HBR"  placeholder="Hand Breadth Right" >
+        </tr>
+		<tr><td> Enter Breadth of Left Hand
+			<td>  <input  name="HBL"  placeholder="Hand Breadth Left" >
+        </tr>
+		<tr><td> Enter Length of Right Foot
+			<td>  <input  name="FLR"  placeholder="Foot Length Right" >
+        </tr>
+		<tr><td> Enter Length of Left Foot
+			<td>  <input  name="FLL"  placeholder="Foot Length Left" >
+        </tr>
+        <tr><td> Enter Breadth of Right Foot
+			<td>  <input  name="FBR"  placeholder="Foot Breadth Right" >
+        </tr>
+        <tr><td> Enter Breadth of Left Foot
+			<td>  <input  name="FBL"  placeholder="Foot Breadth Left" >
+        </tr>          
+        <tr>
+            <td colspan=8 align=center><br><button type="submit" ><u>Predict Height</u></button>
+		</tr>
+	  </table>
+    </form>
+       
+     <br> {{pred}}<br>  
+
+  </body>
+    </center>
+</html>
